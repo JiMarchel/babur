@@ -107,7 +107,7 @@ export default function Navbar() {
             >
                 <div
                     className={cn(
-                        "fixed inset-y-0 right-0 w-3/4 max-w-sm bg- dark:bg-gray-900 shadow-xl p-6 transition-transform duration-300 ease-in-out",
+                        "fixed inset-y-0 right-0 w-3/4 max-w-sm bg-white/90 dark:bg-gray-900/80  shadow-xl p-6 transition-transform duration-300 ease-in-out",
                         mobileMenuOpen ? "translate-x-0" : "translate-x-full",
                     )}
                 >
