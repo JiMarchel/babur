@@ -46,7 +46,7 @@ export const it = {
     returnHome: "Torna alla Home"
   },
   apartments: {
-    title: "I Nostri Appartamenti e Camere",
+    title: "Temukan Solusi Tenda Membran yang Tepat",
     subtitle: "Scopri la nostra selezione di alloggi premium, dalle accoglienti mansarde ai lussuosi attici.",
     filters: {
       guests: "Ospiti",
@@ -64,7 +64,7 @@ export const it = {
       resetFilters: "Reimposta Filtri",
       noMatch: "Nessun appartamento corrisponde ai tuoi filtri",
       adjustFilters: "Prova a modificare i criteri di filtro per vedere più opzioni.",
-      viewDetails: "Visualizza Dettagli",
+      viewDetails: "Lihat Detail",
       features: "caratteristiche",
       more: "altro"
     }
@@ -234,7 +234,7 @@ export const it = {
       subtitle: "Tenda Membran Surabaya",
       title: "Proyek Tenda Membran Unggulan",
       description: "Lihat beberapa proyek terbaik kami—mulai dari kanopi carport, atap tribun, hingga struktur membran untuk bangunan komersial. Semua dikerjakan dengan material berkualitas tinggi dan hasil yang estetis.",
-      viewAll: "Visualizza Tutti gli Appartamenti"
+      viewAll: "Lihat Semua Galeri"
     },
     amenities: {
       subtitle: "",
@@ -375,35 +375,35 @@ export const it = {
       location: "Surabaya",
       description: "Desain elegan dan tahan cuaca, cocok untuk rumah modern. Menggunakan rangka galvanis dan membran PVC import.",
       capacity: 2,
-      image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
-      features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
+      image: "/gallery/tenda_squere.jpeg",
+      features: ["Besi Hollow", "Tahan Cuaca", "Membran", "Cat Anti Karat"]
     },
     "2": {
-      name: "Tenda Carport",
+      name: "Tenda Radius Modern",
       size: "10x10m",
       location: "Pakuwon City",
-      description: "Appartamento spazioso ideale per famiglie, con cucina completa e splendide viste costiere.",
+      description: "Tenda dengan desain radius modern, memberikan kesan mewah dan elegan pada area outdoor Anda.",
       capacity: 2,
-      image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
-      features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
+      image: "/gallery/tenda_radius.jpeg",
+      features: ["Besi Hollow", "Tahan Cuaca", "Membran", "Cat Anti Karat"]
     },
     "3": {
-      name: "Studio Esecutivo sulla Spiaggia",
+      name: "Tenda Setengah Radius",
       size: "10x10m",
-      location: "Beachfront",
-      description: "Elegante studio con accesso diretto alla spiaggia, design moderno e finiture di pregio.",
+      location: "Sun City Mall",
+      description: "Kombinasi desain klasik dan modern dengan bentuk setengah radius yang unik.",
       capacity: 2,
-      image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
-      features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"],
+      image: "/gallery/tenda_setengah_radius.jpeg",
+      features: ["Besi Hollow", "Tahan Cuaca", "Membran", "Cat Anti Karat"]
     },
     "4": {
-      name: "Suite Attico di Lusso",
+      name: "Tenda Bulat Exclusive",
       size: "10x10m",
       location: "Beachfront",
-      description: "Esclusiva suite all'ultimo piano con ampia terrazza e vista panoramica sul mare.",
+      description: "Tenda dengan desain bulat yang eksklusif, cocok untuk area terbuka yang luas.",
       capacity: 2,
-      image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
-      features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
+      image: "/gallery/tenda_bulat.jpeg",
+      features: ["Besi Hollow", "Tahan Cuaca", "Membran", "Cat Anti Karat"]
     },
     "5": {
       name: "Camera Doppia Classica",
@@ -412,7 +412,7 @@ export const it = {
       description: "Confortevole camera d'albergo con comfort moderni e vista parziale sul mare.",
       capacity: 2,
       image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
-      features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
+      features: ["Besi Hollow", "Tahan Cuaca", "Membran", "Cat Anti Karat"]
     },
     "6": {
       name: "Appartamento Vista Giardino",
@@ -421,7 +421,7 @@ export const it = {
       description: "Appartamento tranquillo circondato da rigogliosi giardini, a breve distanza dalla spiaggia.",
       capacity: 2,
       image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
-      features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
+      features: ["Besi Hollow", "Tahan Cuaca", "Membran", "Cat Anti Karat"]
     }
   }
 };

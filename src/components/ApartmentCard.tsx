@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Users, Maximize, MapPin, Bath, Coffee, Wifi } from "lucide-react";
+import { Users, Maximize, MapPin, Bath, Coffee, Wifi, Container, CloudSunRain, Layers2, PaintBucket} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -31,7 +31,7 @@ export default function ApartmentCard({ apartment }: { apartment: ApartmentProps
     ? t.apartmentDescriptions[apartment.id].description 
     : apartment.description;
   
-  return (
+  return ( 
     <div 
       className="rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl bg-card group"
       onMouseEnter={() => setIsHovered(true)}
@@ -72,29 +72,30 @@ export default function ApartmentCard({ apartment }: { apartment: ApartmentProps
         <p className="text-muted-foreground line-clamp-2">{translatedDescription}</p>
         
         <div className="flex flex-wrap gap-2">
-          {apartment.features.slice(0, 3).map((feature, index) => (
+          {apartment.features.slice(0, 4).map((feature, index) => (
             <div 
               key={index} 
               className="flex items-center text-sm text-muted-foreground bg-muted px-3 py-1 rounded-full"
             >
-              {feature === "Bathroom" && <Bath className="h-3.5 w-3.5 mr-1" />}
-              {feature === "Kitchen" && <Coffee className="h-3.5 w-3.5 mr-1" />}
-              {feature === "Wi-Fi" && <Wifi className="h-3.5 w-3.5 mr-1" />}
+              {feature === "Besi Hollow" && <Container className="h-3.5 w-3.5 mr-1" />}
+              {feature === "Tahan Cuaca" && <CloudSunRain className="h-3.5 w-3.5 mr-1" />}
+              {feature === "Membran" && <Layers2 className="h-3.5 w-3.5 mr-1" />}
+              {feature === "Cat Anti Karat" && <PaintBucket className="h-3.5 w-3.5 mr-1" />}
               <span>{feature}</span>
             </div>
           ))}
-          {apartment.features.length > 3 && (
+          {apartment.features.length > 4 && (
             <div className="text-sm text-muted-foreground bg-muted px-3 py-1 rounded-full">
-              +{apartment.features.length - 3} {t.apartments.filters.more}
+              +{apartment.features.length - 4} {t.apartments.filters.more}
             </div>
           )}
         </div>
         
-        <div className="flex items-end justify-between pt-2">
-          <div>
+        <div className="flex items-end justify-end pt-2">
+          {/* <div>
             <span className="text-xl font-bold">${apartment.price}</span>
             <span className="text-muted-foreground text-sm"> / {t.booking.summary.night}</span>
-          </div>
+          </div> */}
           <Button asChild className="btn-primary">
             <Link to={`/apartments/${apartment.id}`}>{t.apartments.filters.viewDetails}</Link>
           </Button>
