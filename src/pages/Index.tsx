@@ -206,10 +206,12 @@ export default function Index() {
                                     )}
                                 </ul>
                             </div>
-                            <h2 className="text-2xl font-bold mb-6">
-                                {t.contact.sendMessage}
-                            </h2>
-                            <ContactForm />
+                            <div>
+                                <h2 className="text-3xl font-bold mb-6 md:text-4xl md:mt-2 lg:mt-12">
+                                    {t.contact.sendMessage}
+                                </h2>
+                                <ContactForm />
+                            </div>
                         </div>
                     </div>
 
