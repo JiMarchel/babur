@@ -176,9 +176,9 @@ export const it = {
     phone: "Telepon",
     email: "Email",
     receptionHours: "Jam Operasional",
-    checkInTime: "Check-in: Setelah pukul 15:00",
-    checkOutTime: "Check-out: Sebelum pukul 11:00",
-    sendMessage: "Kirim Pesan",
+    checkInTime: "Setelah pukul 15:00",
+    checkOutTime: "Sebelum pukul 11:00",
+    sendMessage: "Kirim Pesan WhatsApp",
     fullName: "Nama Lengkap",
     phoneNumber: "Nomor Telepon",
     subject: "Subjek",
@@ -219,16 +219,16 @@ export const it = {
   home: {
     welcome: {
       subtitle: "",
-      title: "Solusi Konstruksi Besi Berkualitas & Estetis Atap, Railing, dan Struktur Besi yang Tahan Lama",
-      description1: "Kami menyediakan berbagai produk las dan konstruksi besi, mulai dari kanopi modern, tangga dengan railing besi minimalis, hingga struktur penunjang bangunan yang kokoh dan elegan. Dikerjakan oleh tenaga profesional dengan material pilihan untuk menjamin kualitas dan keamanan jangka panjang.",
-      description2: "Kami adalah spesialis dalam bidang pengelasan dengan pengalaman lebih dari 10 tahun. Fokus kami adalah menghadirkan produk-produk logam seperti kanopi, pagar, pintu besi, dan pelindung jendela yang tidak hanya kokoh, tetapi juga menambah nilai estetika pada bangunan Anda.",
+      title: "Solusi Tenda Membran Estetik & Tahan Lama untuk Hunian dan Layanan Publik",
+      description1: "Kami adalah spesialis tenda membran di Surabaya yang menghadirkan desain modern, kokoh, dan elegan untuk berbagai kebutuhan—mulai dari carport, kanopi, taman, area publik, hingga fasilitas komersial. Dengan pengalaman lebih dari 10 tahun, kami mengutamakan kualitas material dan pengerjaan profesional untuk hasil yang estetis dan tahan terhadap cuaca ekstrem.",
+      description2: "Kami melayani pembuatan dan pemasangan tenda membran dengan desain yang disesuaikan, struktur kuat, dan tampilan elegan. Didukung oleh tim berpengalaman dan material berkualitas, kami siap mewujudkan kebutuhan Anda untuk tenda carport, area publik, maupun bangunan komersial lainnya.",
       learnMore: "Hubungi Kami"
     },
     booking: {
       subtitle: "",
-      title: "Hubungi Kami melalui Email",
-      description: "Hubungi kami untuk konsultasi, penawaran harga, atau informasi lebih lanjut mengenai produk dan layanan kami.",
-      benefits: ["Conferma istantanea", "Miglior tariffa garantita", "Opzioni di cancellazione flessibili", "Pagamento sicuro"]
+      title: "Hubungi Kami melalui WhatsApp",
+      description: "Hubungi kami untuk konsultasi desain, estimasi harga, atau informasi lebih lanjut tentang tenda membran yang sesuai dengan kebutuhan Anda.",
+      benefits: ["Respon Cepat & Ramah", "Harga Transparan dan Kompetitif", "Desain Bisa Disesuaikan", "Jadwal Pemasangan Fleksibel", "Gratis Konsultasi Awal"]
     },
     featuredApartments: {
       subtitle: "I Nostri Alloggi",
@@ -268,9 +268,9 @@ export const it = {
       }
     },
     cta: {
-      title: "Pronto per la tua Vacanza da Sogno?",
-      description: "Prenota il tuo soggiorno oggi e vivi il perfetto connubio di lusso, comfort e viste mozzafiato sul mare.",
-      bookNow: "Prenota Ora"
+      title: "Siap Wujudkan Tenda Membran Impian Anda?",
+      description: "Konsultasikan kebutuhan Anda hari ini dan dapatkan solusi desain tenda membran terbaik untuk rumah, toko, atau proyek komersial Anda. Kami siap membantu dari perencanaan hingga pemasangan dengan hasil yang kokoh dan estetis.",
+      bookNow: "Konsultasi Gratis Sekarang"
     }
   },
   amenitiesPage: {

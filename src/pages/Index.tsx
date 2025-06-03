@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Theater, Home, Blinds, Store, Fence, Tent, DoorOpen } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 // Sample apartments data
 const featuredApartments: ApartmentProps[] = [
@@ -96,6 +97,9 @@ export default function Index() {
       <main className="flex-1">
         {/* Hero Section */}
         <HeroSection />
+        
+        {/* WhatsApp Button */}
+        <WhatsAppButton phoneNumber="6281332413700" />
         
         {/* Welcome Section */}
         <section id="welcome" className="section">
