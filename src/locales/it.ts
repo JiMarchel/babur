@@ -231,9 +231,9 @@ export const it = {
       benefits: ["Respon Cepat & Ramah", "Harga Transparan dan Kompetitif", "Desain Bisa Disesuaikan", "Jadwal Pemasangan Fleksibel", "Gratis Konsultasi Awal"]
     },
     featuredApartments: {
-      subtitle: "I Nostri Alloggi",
-      title: "Appartamenti in Evidenza",
-      description: "Scopri le nostre opzioni di alloggio più popolari, ognuna che offre un perfetto equilibrio di comfort, stile e viste mozzafiato sul mare.",
+      subtitle: "Tenda Membran Surabaya",
+      title: "Proyek Tenda Membran Unggulan",
+      description: "Lihat beberapa proyek terbaik kami—mulai dari kanopi carport, atap tribun, hingga struktur membran untuk bangunan komersial. Semua dikerjakan dengan material berkualitas tinggi dan hasil yang estetis.",
       viewAll: "Visualizza Tutti gli Appartamenti"
     },
     amenities: {
@@ -370,28 +370,58 @@ export const it = {
   },
   apartmentDescriptions: {
     "1": {
-      name: "Suite Vista Mare Deluxe",
-      description: "Suite lussuosa con vista panoramica sul mare, comfort moderni e balcone privato."
+      name: "Kanopi Carport Minimalis",
+      size: "10x10m",
+      location: "Surabaya",
+      description: "Desain elegan dan tahan cuaca, cocok untuk rumah modern. Menggunakan rangka galvanis dan membran PVC import.",
+      capacity: 2,
+      image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+      features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
     },
     "2": {
-      name: "Appartamento Premium per Famiglie",
-      description: "Appartamento spazioso ideale per famiglie, con cucina completa e splendide viste costiere."
+      name: "Tenda Carport",
+      size: "10x10m",
+      location: "Pakuwon City",
+      description: "Appartamento spazioso ideale per famiglie, con cucina completa e splendide viste costiere.",
+      capacity: 2,
+      image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+      features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
     },
     "3": {
       name: "Studio Esecutivo sulla Spiaggia",
-      description: "Elegante studio con accesso diretto alla spiaggia, design moderno e finiture di pregio."
+      size: "10x10m",
+      location: "Beachfront",
+      description: "Elegante studio con accesso diretto alla spiaggia, design moderno e finiture di pregio.",
+      capacity: 2,
+      image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+      features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"],
     },
     "4": {
       name: "Suite Attico di Lusso",
-      description: "Esclusiva suite all'ultimo piano con ampia terrazza e vista panoramica sul mare."
+      size: "10x10m",
+      location: "Beachfront",
+      description: "Esclusiva suite all'ultimo piano con ampia terrazza e vista panoramica sul mare.",
+      capacity: 2,
+      image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+      features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
     },
     "5": {
       name: "Camera Doppia Classica",
-      description: "Confortevole camera d'albergo con comfort moderni e vista parziale sul mare."
+      size: "10x10m",
+      location: "Beachfront",
+      description: "Confortevole camera d'albergo con comfort moderni e vista parziale sul mare.",
+      capacity: 2,
+      image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+      features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
     },
     "6": {
       name: "Appartamento Vista Giardino",
-      description: "Appartamento tranquillo circondato da rigogliosi giardini, a breve distanza dalla spiaggia."
+      size: "10x10m",
+      location: "Beachfront",
+      description: "Appartamento tranquillo circondato da rigogliosi giardini, a breve distanza dalla spiaggia.",
+      capacity: 2,
+      image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+      features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
     }
   }
 };

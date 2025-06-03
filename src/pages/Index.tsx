@@ -11,42 +11,44 @@ import { ArrowRight, Theater, Home, Blinds, Store, Fence, Tent, DoorOpen } from 
 import { useLanguage } from "@/contexts/LanguageContext";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
-// Sample apartments data
-const featuredApartments: ApartmentProps[] = [
-  {
-    id: "1",
-    name: "Deluxe Sea View Suite",
-    description: "Luxurious suite with panoramic sea views, modern amenities, and a private balcony.",
-    price: 180,
-    capacity: 2,
-    size: 45,
-    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
-    location: "Beachfront",
-    features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Balcony"]
-  },
-  {
-    id: "2",
-    name: "Premium Family Apartment",
-    description: "Spacious apartment ideal for families, with full kitchen and stunning coastal views.",
-    price: 250,
-    capacity: 4,
-    size: 75,
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
-    location: "Second row",
-    features: ["Wi-Fi", "Kitchen", "Bathroom", "Air Conditioning", "TV", "Washing Machine"]
-  },
-  {
-    id: "3",
-    name: "Executive Beach Studio",
-    description: "Elegant studio with direct beach access, modern design, and premium finishes.",
-    price: 150,
-    capacity: 2,
-    size: 35,
-    image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&h=600&fit=crop",
-    location: "Beachfront",
-    features: ["Wi-Fi", "Kitchenette", "Bathroom", "Air Conditioning", "TV"]
-  }
-];
+// Featured apartments data from language file
+const createFeaturedApartments = (t: any): ApartmentProps[] => {
+  return [
+    {
+      id: "1",
+      name: t.apartmentDescriptions["1"].name,
+      description: t.apartmentDescriptions["1"].description,
+      price: 180,
+      capacity: t.apartmentDescriptions["1"].capacity,
+      size: parseInt(t.apartmentDescriptions["1"].size),
+      image: t.apartmentDescriptions["1"].image,
+      location: t.apartmentDescriptions["1"].location,
+      features: t.apartmentDescriptions["1"].features
+    },
+    {
+      id: "2",
+      name: t.apartmentDescriptions["2"].name,
+      description: t.apartmentDescriptions["2"].description,
+      price: 250,
+      capacity: t.apartmentDescriptions["2"].capacity,
+      size: parseInt(t.apartmentDescriptions["2"].size),
+      image: t.apartmentDescriptions["2"].image,
+      location: t.apartmentDescriptions["2"].location,
+      features: t.apartmentDescriptions["2"].features
+    },
+    {
+      id: "3",
+      name: t.apartmentDescriptions["3"].name,
+      description: t.apartmentDescriptions["3"].description,
+      price: 150,
+      capacity: t.apartmentDescriptions["3"].capacity,
+      size: parseInt(t.apartmentDescriptions["3"].size),
+      image: t.apartmentDescriptions["3"].image,
+      location: t.apartmentDescriptions["3"].location,
+      features: t.apartmentDescriptions["3"].features
+    }
+  ];
+};
 
 export default function Index() {
   const { t } = useLanguage();
@@ -89,6 +91,8 @@ export default function Index() {
       description: t.home.amenities.features.location.description
     }
   ];
+  
+  const featuredApartments = createFeaturedApartments(t);
   
   return (
     <div className="min-h-screen flex flex-col">
