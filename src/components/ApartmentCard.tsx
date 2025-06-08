@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Users, Maximize, MapPin, Bath, Coffee, Wifi, Container, CloudSunRain, Layers2, PaintBucket} from "lucide-react";
+import { Users, Maximize, MapPin, Container, CloudSunRain, Layers2, PaintBucket} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";

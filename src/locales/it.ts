@@ -18,6 +18,9 @@ export const it = {
     description: "Kami adalah spesialis dalam bidang pengelasan dengan pengalaman lebih dari 10 tahun. Fokus kami adalah menghadirkan produk-produk logam seperti kanopi, pagar, pintu besi, dan pelindung jendela yang tidak hanya kokoh, tetapi juga menambah nilai estetika pada bangunan Anda.",
     quickLinks: "Daftar Konten",
     contact: "Kontak Kami",
+    location: "Lokasi Kami",
+    phone: "Telepon",
+    email: "Email",
     newsletter: "Newsletter",
     newsletterDesc: "Iscriviti alla nostra newsletter per offerte speciali e aggiornamenti.",
     yourEmail: "Alamat Email Anda",
@@ -242,28 +245,28 @@ export const it = {
       description: "Kami adalah spesialis dalam bidang pengelasan dengan pengalaman lebih dari 10 tahun. Fokus kami adalah menghadirkan produk-produk logam seperti kanopi, pagar, pintu besi, dan pelindung jendela yang tidak hanya kokoh, tetapi juga menambah nilai estetika pada bangunan Anda.",
       features: {
         beachfront: {
-          title: "Pagar Besi",
-          description: "Pagar besi dengan desain elegan dan kuat, cocok untuk rumah tinggal, gedung, maupun area komersial. Tersedia dalam berbagai model: minimalis, klasik, hingga custom sesuai permintaan Anda."
+          title: "Kualitas Terbaik",
+          description: "Kami menghadirkan tenda dan kanopi membran berkualitas tinggi yang tahan terhadap cuaca ekstrem serta memiliki nilai estetika yang tinggi. Cocok untuk kebutuhan hunian, komersial, hingga area publik dengan berbagai pilihan desain elegan."
         },
         pools: {
-          title: "Kanopi",
-          description: "Kanopi besi dan baja ringan berkualitas tinggi, tahan cuaca, cocok untuk carport, halaman, teras, atau area usaha. Bisa dilengkapi atap polycarbonate, spandek, atau tempered glass."
+          title: "Desain Elegan dan Modern",
+          description: "Desain tenda membran kami mengutamakan keindahan visual dan fungsionalitas. Menggunakan material premium dan bentuk arsitektural modern yang dapat menambah nilai estetika bangunan Anda."
         },
         restaurant: {
-          title: "Pintu Besi",
-          description: "Pintu besi solid untuk keamanan maksimal dengan tampilan modern atau klasik. Cocok untuk pintu utama, pintu samping, dan pintu gudang. Bisa dikombinasikan dengan ornamen atau motif laser cutting."
+          title: "Tim Profesional",
+          description: "Proyek Anda akan ditangani oleh tim yang ahli di bidang konstruksi membran. Mulai dari tahap desain, produksi hingga pemasangan dilakukan dengan standar kerja tinggi demi hasil yang optimal dan tahan lama."
         },
         wifi: {
-          title: "Pelindung Jendela",
-          description: "Teralis jendela dari besi hollow atau tempa, dirancang untuk melindungi rumah Anda tanpa mengorbankan estetika. Tersedia model minimalis hingga ornamental sesuai gaya bangunan."
+          title: "Gratis Konsultasi",
+          description: "Kami menyediakan layanan konsultasi gratis untuk membantu Anda menentukan desain tenda membran yang sesuai dengan kebutuhan dan anggaran. Tim kami siap memberikan solusi yang tepat dan efisien."
         },
         bar: {
-          title: "Tralis",
-          description: "Teralis untuk pintu, jendela, atau pagar dengan desain custom. Menambah keamanan rumah sekaligus menambah nilai estetika. Bisa dilapisi cat powder coating untuk ketahanan ekstra."
+          title: "Harga Terjangkau",
+          description: "Dengan tetap mengutamakan kualitas, kami menawarkan harga kompetitif untuk berbagai jenis tenda membran. Tersedia pilihan custom sesuai budget tanpa mengorbankan keindahan maupun kekuatan struktur."
         },
         location: {
-          title: "Tenda",
-          description: "Rangka tenda dari besi hollow kuat dan anti karat, cocok untuk acara, toko, atau area usaha. Desain bisa disesuaikan dengan kebutuhan dan mudah dibongkar pasang."
+          title: "Tahan Lama",
+          description: "Menggunakan bahan membran berkualitas dan rangka kokoh, produk kami dirancang untuk penggunaan jangka panjang. Tahan terhadap sinar UV, hujan, dan kondisi luar ruangan lainnya, serta minim perawatan."
         }
       }
     },

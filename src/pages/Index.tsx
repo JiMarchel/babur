@@ -2,20 +2,19 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-import BookingForm from "@/components/BookingForm";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ApartmentCard, { ApartmentProps } from "@/components/ApartmentCard";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
     ArrowRight,
-    Theater,
-    Home,
-    Blinds,
-    Store,
-    Fence,
+    CloudSunRain,
+    HandCoins,
+    BriefcaseBusiness,
+    Star,
     Tent,
-    DoorOpen,
+    ThumbsUp,
+    MessageCircleQuestion
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -71,32 +70,32 @@ export default function Index() {
     // Feature items
     const features = [
         {
-            icon: <Fence className="h-8 w-8 text-primary" />,
+            icon: <ThumbsUp className="h-8 w-8 text-primary" />,
             title: t.home.amenities.features.beachfront.title,
             description: t.home.amenities.features.beachfront.description,
         },
         {
-            icon: <Store className="h-8 w-8 text-primary" />,
+            icon: <Star className="h-8 w-8 text-primary" />,
             title: t.home.amenities.features.pools.title,
             description: t.home.amenities.features.pools.description,
         },
         {
-            icon: <DoorOpen className="h-8 w-8 text-primary" />,
+            icon: <BriefcaseBusiness className="h-8 w-8 text-primary" />,
             title: t.home.amenities.features.restaurant.title,
             description: t.home.amenities.features.restaurant.description,
         },
         {
-            icon: <Blinds className="h-8 w-8 text-primary" />,
+            icon: <MessageCircleQuestion className="h-8 w-8 text-primary" />,
             title: t.home.amenities.features.wifi.title,
             description: t.home.amenities.features.wifi.description,
         },
         {
-            icon: <Theater className="h-8 w-8 text-primary" />,
+            icon: <HandCoins className="h-8 w-8 text-primary" />,
             title: t.home.amenities.features.bar.title,
             description: t.home.amenities.features.bar.description,
         },
         {
-            icon: <Tent className="h-8 w-8 text-primary" />,
+            icon: <CloudSunRain className="h-8 w-8 text-primary" />,
             title: t.home.amenities.features.location.title,
             description: t.home.amenities.features.location.description,
         },
@@ -150,25 +149,11 @@ export default function Index() {
                             </div>
 
                             <div className="relative animate-fade-in [animation-delay:300ms]">
-                                <div className="aspect-[4/3] rounded-2xl overflow-hidden">
+                                <div className="aspect-[4/2.2] rounded-2xl overflow-hidden">
                                     <img
-                                        src="/payung.png"
+                                        src="/background-beranda.png"
                                         alt="Seaside view"
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-                                <div className="absolute -bottom-6 -left-6 w-1/3 rounded-2xl overflow-hidden shadow-xl">
-                                    <img
-                                        src="/railing-tangga.jpeg"
-                                        alt="Luxury apartment interior"
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-                                <div className="absolute -top-6 -right-6 w-1/2 rounded-2xl overflow-hidden shadow-xl">
-                                    <img
-                                        src="/pegangan_tangga.jpg"
-                                        alt="Pool view"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover bg-cover bg-center rounded-2xl"
                                     />
                                 </div>
                             </div>

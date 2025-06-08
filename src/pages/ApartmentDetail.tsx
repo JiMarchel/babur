@@ -40,7 +40,7 @@ export default function ApartmentDetail() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <main className="flex-1 pt-20">
+      <main className="flex-1 mt-20">
         {/* Hero Section */}
         <section className="relative">
           <div className="container max-w-6xl">
@@ -48,7 +48,7 @@ export default function ApartmentDetail() {
               <img 
                 src={apartment.image} 
                 alt={apartment.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover mt-20 rounded-2xl"
               />
             </div>
             
@@ -109,19 +109,19 @@ export default function ApartmentDetail() {
               {/* Sidebar */}
               <div className="lg:col-span-1">
                 <div className="sticky top-24 rounded-xl border p-6 bg-card">
-                  <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
+                  <h2 className="text-xl font-semibold mb-4">Hubungi via WhatsApp</h2>
                   <p className="text-muted-foreground mb-6">
-                    Interested in this property? Contact us for more information or to schedule a consultation.
+                    Tertarik dengan properti ini? Hubungi kami untuk informasi lebih lanjut atau untuk menjadwalkan konsultasi.
                   </p>
                   <Button 
                     className="w-full mb-4"
                     onClick={() => {
                       const phoneNumber = "6281332413700";
-                      const message = `Hello, I'm interested in ${apartment.name}. Can you provide more information?`;
+                      const message = `Halo, saya ingin konsultasi tentang jasa las ${apartment.name}.`;
                       window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
                     }}
                   >
-                    Contact via WhatsApp
+                    Hubungi via WhatsApp
                   </Button>
                 </div>
               </div>

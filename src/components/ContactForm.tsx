@@ -4,14 +4,7 @@ import { Send, Check } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import {
-    Form,
-    FormControl,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
-} from "@/components/ui/form";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Textarea } from "@/components/ui/textarea";
 import { z } from "zod";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -98,7 +91,7 @@ export const ContactForm = () => {
                                         </FormLabel>
                                         <FormControl>
                                             <Input
-                                                placeholder="John Doe"
+                                                placeholder="Nama Lengkap"
                                                 {...field}
                                             />
                                         </FormControl>
@@ -116,7 +109,7 @@ export const ContactForm = () => {
                                         </FormLabel>
                                         <FormControl>
                                             <Input
-                                                placeholder="+1 234 567 8900"
+                                                placeholder="+628xxx"
                                                 {...field}
                                             />
                                         </FormControl>
