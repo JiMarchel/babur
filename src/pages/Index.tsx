@@ -299,8 +299,19 @@ export default function Index() {
                             <p className="text-muted-foreground mb-8">
                                 {t.home.cta.description}
                             </p>
-                            <Button asChild size="lg" className="btn-primary">
-                                <Link to="/booking">{t.home.cta.bookNow}</Link>
+                            <Button
+                                size="lg"
+                                className="btn-primary"
+                                onClick={() => {
+                                    const phoneNumber = "6281332413700";
+                                    const message = "Halo, saya ingin konsultasi tentang jasa las";
+                                    window.open(
+                                        `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
+                                        "_blank"
+                                    );
+                                }}
+                            >
+                                {t.home.cta.bookNow}
                             </Button>
                         </div>
                     </div>

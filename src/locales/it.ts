@@ -15,7 +15,7 @@ export const it = {
     scrollDown: "Gulir ke bawah"
   },
   footer: {
-    description: "Kami adalah spesialis dalam bidang pengelasan dengan pengalaman lebih dari 10 tahun. Fokus kami adalah menghadirkan produk-produk logam seperti kanopi, pagar, pintu besi, dan pelindung jendela yang tidak hanya kokoh, tetapi juga menambah nilai estetika pada bangunan Anda.",
+    description: "Kami adalah spesialis tenda membran di Surabaya yang menghadirkan desain modern, kokoh, dan elegan untuk berbagai kebutuhan mulai dari carport, kanopi, taman, area publik, hingga fasilitas komersial. Dengan pengalaman lebih dari 10 tahun, kami mengutamakan kualitas material dan pengerjaan profesional untuk hasil yang estetis dan tahan terhadap cuaca ekstrem.",
     quickLinks: "Daftar Konten",
     contact: "Kontak Kami",
     location: "Lokasi Kami",
@@ -44,9 +44,9 @@ export const it = {
     description: "Kami sangat berterima kasih kepada pelanggan kami yang telah memberikan testimoni positif tentang pengalaman mereka dengan kami."
   },
   notFound: {
-    title: "Pagina Non Trovata",
-    description: "Non siamo riusciti a trovare la pagina che stavi cercando. Forse hai preso una svolta sbagliata in paradiso?",
-    returnHome: "Torna alla Home"
+    title: "Page Tidak Ditemukan",
+    description: "Kami tidak dapat menemukan halaman yang Anda cari. Mungkin Anda salah jalan di surga?",
+    returnHome: "Kembali ke Beranda"
   },
   apartments: {
     title: "Temukan Solusi Tenda Membran yang Tepat",
@@ -194,28 +194,28 @@ export const it = {
     faqSubtitle: "Beberapa pertanyaan yang sering diajukan oleh pelanggan kami",
     questions: {
       checkInOut: {
-        question: "Quali sono gli orari di check-in e check-out?",
-        answer: "Il check-in è dalle 15:00 in poi, e il check-out è fino alle 11:00. Il check-in anticipato o il check-out posticipato possono essere organizzati in base alla disponibilità."
+        question: "Berapa lama proses pemasangan tenda membran?",
+        answer: "Proses pemasangan tergantung pada ukuran dan kompleksitas desain. Umumnya, pemasangan standar memerlukan waktu 7–14 hari kerja sejak produksi selesai."
       },
       parking: {
-        question: "È disponibile il parcheggio presso la struttura?",
-        answer: "Sì, offriamo parcheggio gratuito per tutti gli ospiti. Il servizio di parcheggio con valletto è disponibile anche a un costo aggiuntivo."
+        question: "Apakah desain tenda bisa custom sesuai kebutuhan saya?",
+        answer: "Ya, kami menyediakan layanan desain custom. Anda bisa konsultasikan bentuk, warna, ukuran, hingga kebutuhan khusus seperti branding atau estetika tertentu."
       },
       pets: {
-        question: "Gli animali domestici sono ammessi negli appartamenti?",
-        answer: "Accogliamo gli animali domestici in appartamenti designati pet-friendly. Si prega di informarci in anticipo se si prevede di portare un animale domestico, poiché potrebbero essere applicati costi aggiuntivi."
+        question: "Apakah tenda membran tahan terhadap cuaca ekstrem?",
+        answer: "Tentu. Tenda membran kami menggunakan material berkualitas tinggi yang tahan terhadap panas, hujan, angin, dan sinar UV. Rangka juga terbuat dari baja tahan karat atau galvanis berkekuatan tinggi."
       },
       breakfast: {
-        question: "La colazione è inclusa nella tariffa della camera?",
-        answer: "La colazione è inclusa in pacchetti camera selezionati. Puoi verificare l'inclusione durante il processo di prenotazione o aggiungerla alla tua prenotazione in qualsiasi momento."
+        question: "Apakah tersedia layanan survei lokasi?",
+        answer: "Ya, kami menyediakan layanan survei lokasi gratis untuk area Surabaya dan sekitarnya. Untuk area di luar kota, biaya survei akan disesuaikan."
       },
       transfers: {
-        question: "Offrite trasferimenti aeroportuali?",
-        answer: "Sì, offriamo trasferimenti aeroportuali a un costo aggiuntivo. Si prega di contattare la nostra concierge almeno 48 ore prima del tuo arrivo per organizzare il trasporto."
+        question: "Apakah saya bisa melihat portofolio proyek sebelumnya?",
+        answer: "Tentu! Anda bisa melihat dokumentasi proyek kami di halaman Galeri atau menghubungi tim kami untuk portofolio lengkap dan testimoni pelanggan."
       },
       amenities: {
-        question: "Quali servizi sono disponibili nella struttura?",
-        answer: "La nostra struttura dispone di piscine, una spa, ristoranti, un bar sulla spiaggia, un centro fitness e accesso diretto alla spiaggia. Tutti gli appartamenti includono Wi-Fi, aria condizionata e elettrodomestici moderni."
+        question: "Apakah ada garansi untuk produk tenda membran?",
+        answer: "Kami memberikan garansi hingga 5 tahun untuk struktur rangka dan 1–3 tahun untuk bahan membran, tergantung jenis material yang dipilih."
       }
     }
   },
@@ -223,7 +223,7 @@ export const it = {
     welcome: {
       subtitle: "",
       title: "Solusi Tenda Membran Estetik & Tahan Lama untuk Hunian dan Layanan Publik",
-      description1: "Kami adalah spesialis tenda membran di Surabaya yang menghadirkan desain modern, kokoh, dan elegan untuk berbagai kebutuhan—mulai dari carport, kanopi, taman, area publik, hingga fasilitas komersial. Dengan pengalaman lebih dari 10 tahun, kami mengutamakan kualitas material dan pengerjaan profesional untuk hasil yang estetis dan tahan terhadap cuaca ekstrem.",
+      description1: "Kami adalah spesialis tenda membran di Surabaya yang menghadirkan desain modern, kokoh, dan elegan untuk berbagai kebutuhan mulai dari carport, kanopi, taman, area publik, hingga fasilitas komersial. Dengan pengalaman lebih dari 10 tahun, kami mengutamakan kualitas material dan pengerjaan profesional untuk hasil yang estetis dan tahan terhadap cuaca ekstrem.",
       description2: "Kami melayani pembuatan dan pemasangan tenda membran dengan desain yang disesuaikan, struktur kuat, dan tampilan elegan. Didukung oleh tim berpengalaman dan material berkualitas, kami siap mewujudkan kebutuhan Anda untuk tenda carport, area publik, maupun bangunan komersial lainnya.",
       learnMore: "Hubungi Kami"
     },
@@ -242,7 +242,7 @@ export const it = {
     amenities: {
       subtitle: "",
       title: "Layanan Kami",
-      description: "Kami adalah spesialis dalam bidang pengelasan dengan pengalaman lebih dari 10 tahun. Fokus kami adalah menghadirkan produk-produk logam seperti kanopi, pagar, pintu besi, dan pelindung jendela yang tidak hanya kokoh, tetapi juga menambah nilai estetika pada bangunan Anda.",
+      description: "Kami adalah spesialis tenda membran di Surabaya yang menghadirkan desain modern, kokoh, dan elegan untuk berbagai kebutuhan mulai dari carport, kanopi, taman, area publik, hingga fasilitas komersial. Dengan pengalaman lebih dari 10 tahun, kami mengutamakan kualitas material dan pengerjaan profesional untuk hasil yang estetis dan tahan terhadap cuaca ekstrem.",
       features: {
         beachfront: {
           title: "Kualitas Terbaik",

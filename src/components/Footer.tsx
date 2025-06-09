@@ -70,7 +70,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-2 text-primary" />
-                <span className="text-muted-foreground">info@edilas.com</span>
+                <span className="text-muted-foreground">info@tendamembransurabaya.com</span>
               </li>
             </ul>
           </div>
@@ -93,7 +93,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-border pt-8 mt-8 text-center text-muted-foreground">
-          <p>&copy; {currentYear} Developed by. {t.footer.allRights}</p>
+          <p>&copy; {currentYear} Developed by <a href="https://nextjiesdev.site" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">NextJiesDev</a></p>
         </div>
       </div>
     </footer>

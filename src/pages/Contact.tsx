@@ -91,7 +91,7 @@ export default function Contact() {
                                                 {t.contact.email}
                                             </h3>
                                             <span className="text-muted-foreground">
-                                                info@edilas.com
+                                                info@tendamembran.com
                                             </span>
                                         </div>
                                     </div>
@@ -114,6 +114,7 @@ export default function Contact() {
                                         </div>
                                     </div>
                                 </div>
+                                
 
                                 <div className="aspect-video rounded-xl overflow-hidden">
                                     <iframe
