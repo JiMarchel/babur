@@ -1,10 +1,17 @@
-import validator from "validator";
+import { isMobilePhone } from "validator";
 import { Button } from "@/components/ui/button";
-import { Send, Check } from "lucide-react";
+import { Send, Check, Phone } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { useForm, useFormState } from "react-hook-form";
+import {
+    Form,
+    FormControl,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+} from "@/components/ui/form";
 import { Textarea } from "@/components/ui/textarea";
 import { z } from "zod";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -13,8 +20,9 @@ import { useState } from "react";
 //schema validation
 const contactFormSchema = z.object({
     name: z.string().min(1, "Name Can not be empty"),
-    phone: z.string().refine(validator.isMobilePhone, "Phone number not valid"),
-    message: z.string().min(1, "Subject can not be empty"),
+    email: z.string().email("Email doesn't valid"),
+    content: z.string().min(1, "Content can not be empty"),
+    phone: z.string().refine(isMobilePhone, "Phone number not valid"),
 });
 interface ContactFormInterface {
     isSubmitted: boolean;
@@ -30,36 +38,29 @@ export const ContactForm = () => {
         defaultValues: {
             name: "",
             phone: "",
-            message: "",
+            content: "",
+            email: "",
         },
     });
 
     const onSubmit = async (values: z.infer<typeof contactFormSchema>) => {
-        // In a real app, this would send the form data to a server
         try {
-            const message = `Nama: ${values.name}
-      No HP: ${values.phone}
-      Pesan: ${values.message}`;
-            const data = {
-                appkey: import.meta.env.VITE_APP_KEY,
-                authkey: import.meta.env.VITE_APP_AUTH_KEY,
-                to: values.phone,
-                message,
-            };
-
+            const formData = new FormData();
+            formData.append("name", values.name);
+            formData.append("email", values.email);
+            formData.append("phone", values.phone);
+            formData.append("content", values.content);
             const response = await fetch(
-                "https://app.wapanels.com/api/create-message",
+                "http://localhost:3000/api/send-email",
                 {
                     method: "POST",
-                    body: JSON.stringify(data),
+                    body: formData,
                 },
             );
             if (response.ok) {
-                // Handle success
                 setIsSubmitted(true);
-                form.reset(); //reset form field nih bos, apa itu use state!?
+                form.reset();
 
-                // Reset form after 3 seconds
                 setTimeout(() => {
                     setIsSubmitted(false);
                 }, 3000);
@@ -122,7 +123,26 @@ export const ContactForm = () => {
                         <div className="space-y-2">
                             <FormField
                                 control={form.control}
-                                name="message"
+                                name="email"
+                                render={({ field }) => (
+                                    <FormItem>
+                                        <FormLabel>{t.contact.email}</FormLabel>
+                                        <FormControl>
+                                            <Input
+                                                placeholder={t.contact.email}
+                                                {...field}
+                                            />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
+                            />
+                        </div>
+
+                        <div className="space-y-2">
+                            <FormField
+                                control={form.control}
+                                name="content"
                                 render={({ field }) => (
                                     <FormItem>
                                         <FormLabel>
@@ -142,7 +162,11 @@ export const ContactForm = () => {
                             />
                         </div>
 
-                        <Button type="submit" className="w-full btn-primary">
+                        <Button
+                            type="submit"
+                            className="w-full btn-primary"
+                            disabled={form.formState.isSubmitting}
+                        >
                             <Send className="mr-2 h-4 w-4" />
                             {t.contact.send}
                         </Button>
