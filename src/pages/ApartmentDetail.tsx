@@ -4,7 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Users, Maximize, MapPin, Check } from "lucide-react";
+import { ArrowLeft, Maximize, MapPin, Check } from "lucide-react";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function ApartmentDetail() {
@@ -77,10 +77,6 @@ export default function ApartmentDetail() {
                   <div className="flex items-center">
                     <MapPin className="h-4 w-4 mr-1" />
                     <span>{apartment.location}</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Users className="h-4 w-4 mr-1" />
-                    <span>{apartment.capacity} guests</span>
                   </div>
                   <div className="flex items-center">
                     <Maximize className="h-4 w-4 mr-1" />

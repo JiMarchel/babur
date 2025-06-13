@@ -76,9 +76,12 @@ export default function Contact() {
                                             <h3 className="font-semibold mb-1">
                                                 {t.contact.phone}
                                             </h3>
-                                            <span className="text-muted-foreground">
-                                                +62 813-3241-3700
-                                            </span>
+                                            <a
+                                                href="https://api.whatsapp.com/send?phone=6281227162297"
+                                                className="text-muted-foreground"
+                                            >
+                                                +62 812-2716-2297
+                                            </a>
                                         </div>
                                     </div>
 
@@ -114,7 +117,6 @@ export default function Contact() {
                                         </div>
                                     </div>
                                 </div>
-                                
 
                                 <div className="aspect-video rounded-xl overflow-hidden">
                                     <iframe

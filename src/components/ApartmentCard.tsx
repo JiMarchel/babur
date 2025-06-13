@@ -54,11 +54,11 @@ export default function ApartmentCard({ apartment }: { apartment: ApartmentProps
               <span>{apartment.location}</span>
             </div>
             <div className="flex items-center space-x-3 text-white">
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <Users className="h-4 w-4 mr-1" />
                 <span>{apartment.capacity} {apartment.capacity === 1 ? 
                   t.apartments.filters.guests : t.apartments.filters.guests}</span>
-              </div>
+              </div> */}
               <div className="flex items-center">
                 <Maximize className="h-4 w-4 mr-1" />
                 <span>{apartment.size} m²</span>
