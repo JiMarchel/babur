@@ -112,7 +112,7 @@ export default function ApartmentDetail() {
                   <Button 
                     className="w-full mb-4"
                     onClick={() => {
-                      const phoneNumber = "6281332413700";
+                      const phoneNumber = "6281227162297";
                       const message = `Halo, saya ingin konsultasi tentang jasa las ${apartment.name}.`;
                       window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
                     }}

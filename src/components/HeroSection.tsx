@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function HeroSection() {
@@ -35,7 +32,7 @@ export default function HeroSection() {
       />
       
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/50" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/30 to-black/50" />
       
       {/* Content */}
       <div
@@ -55,7 +52,7 @@ export default function HeroSection() {
               variant="default" 
               className="min-w-[200px] rounded-full transform transition-all duration-300 hover:translate-y-[-2px]"
               onClick={() => {
-                const phoneNumber = "6281332413700"; // Phone number without special characters
+                const phoneNumber = "6281227162297"; // Phone number without special characters
                 const message = "Halo, saya ingin konsultasi tentang jasa las"; // Pre-defined message
                 window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
               }}

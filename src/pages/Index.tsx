@@ -134,7 +134,7 @@ export default function Index() {
                                 <Button
                                     className="btn-primary"
                                     onClick={() => {
-                                        const phoneNumber = "6281332413700"; // Phone number without special characters
+                                        const phoneNumber = "6281227162297"; // Phone number without special characters
                                         const message =
                                             "Halo, saya ingin konsultasi tentang jasa las"; // Pre-defined message
                                         window.open(
@@ -303,7 +303,7 @@ export default function Index() {
                                 size="lg"
                                 className="btn-primary"
                                 onClick={() => {
-                                    const phoneNumber = "6281332413700";
+                                    const phoneNumber = "6281227162297";
                                     const message = "Halo, saya ingin konsultasi tentang jasa las";
                                     window.open(
                                         `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,

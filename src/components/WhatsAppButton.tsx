@@ -6,7 +6,7 @@ interface WhatsAppButtonProps {
 
 const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ phoneNumber }) => {
   const handleClick = () => {
-    const whatsappUrl = `https://wa.me/${phoneNumber}`;
+    const whatsappUrl = `https://wa.me/6281227162297`;
     window.open(whatsappUrl, '_blank');
   };
 

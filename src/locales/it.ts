@@ -10,7 +10,7 @@ export const it = {
     subtitle: "ALLOGGI DI LUSSO SUL MARE",
     title: "Jasa Pembuatan Kanopi Membran Surabaya",
     description:
-      "Selamat datang di Edi Las, spesialis terpercaya dalam jasa pembuatan Kanopi Membran yang mengedepankan estetika, kekuatan, dan kualitas terbaik. Kami menghadirkan desain kanopi modern dengan material membran pilihan — kuat, fleksibel, dan mampu menghadirkan kesan mewah untuk hunian, bisnis, maupun fasilitas umum Anda.",
+      "Selamat datang di Tenda Membran Surabaya, spesialis terpercaya dalam jasa pembuatan Kanopi Membran yang mengedepankan estetika, kekuatan, dan kualitas terbaik. Kami menghadirkan desain kanopi modern dengan material membran pilihan — kuat, fleksibel, dan mampu menghadirkan kesan mewah untuk hunian, bisnis, maupun fasilitas umum Anda.",
     bookStay: "Konsultasi Sekarang",
     exploreApartments: "Esplora gli Appartamenti",
     scrollDown: "Gulir ke bawah",
