@@ -4,9 +4,10 @@ interface WhatsAppButtonProps {
   phoneNumber: string;
 }
 
-const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ phoneNumber }) => {
+export default function WhatsAppButton({ phoneNumber }: WhatsAppButtonProps) {
+  const whatsappUrl = `https://wa.me/${phoneNumber}`;
+
   const handleClick = () => {
-    const whatsappUrl = `https://wa.me/6281227162297`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -19,6 +20,4 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ phoneNumber }) => {
       <FaWhatsapp className="text-2xl" />
     </button>
   );
-};
-
-export default WhatsAppButton; 
+} 

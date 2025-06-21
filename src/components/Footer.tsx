@@ -92,7 +92,7 @@ export default function Footer() {
                                 <Phone className="w-5 h-5 mr-2 text-primary" />
                                 <a
                                     href="https://api.whatsapp.com/send?phone=6281227162297"
-                                    className="text-muted-foreground"
+                                    className="flex items-center text-muted-foreground hover:text-primary transition-colors"
                                 >
                                     +62 812-2716-2297
                                 </a>

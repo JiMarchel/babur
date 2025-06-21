@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import ApartmentCard, { ApartmentProps } from "@/components/ApartmentCard";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import Helm from "@/components/Helm";
 
 // Create apartments data from language file
 const createAllApartments = (t: any): ApartmentProps[] => {
@@ -58,62 +59,69 @@ export default function Apartments() {
   const locations = ["all", ...new Set(allApartments.map(apt => apt.location))];
   
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      
-      <main className="flex-1 pt-20">
-        {/* Header Section */}
-        <section className="relative py-20 bg-gradient-to-r from-sea-light to-white dark:from-sea-dark dark:to-background overflow-hidden">
-          <div className="container relative z-10">
-            <div className="max-w-3xl mx-auto text-center animate-fade-in">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                {t.apartments.title}
-              </h1>
-              <p className="text-muted-foreground text-lg mb-6">
-                {t.apartments.subtitle}
-              </p>
-            </div>
-          </div>
-          
-          {/* Decorative elements */}
-          <div className="absolute bottom-0 right-0 w-1/2 h-1/2 opacity-10">
-            <div className="absolute bottom-0 right-0 w-64 h-64 rounded-full bg-primary/50 blur-3xl" />
-            <div className="absolute top-10 right-40 w-48 h-48 rounded-full bg-sea-light blur-3xl" />
-          </div>
-        </section>
+    <>
+      <Helm
+        content="Tenda Membran Surabaya - Lihat koleksi lengkap tenda membran berkualitas tinggi dengan berbagai ukuran dan desain untuk kebutuhan bisnis dan acara Anda."
+        href="/apartments"
+        title="Koleksi Tenda Membran"
+      />
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
         
-        {/* Apartments Grid */}
-        <section className="section">
-          <div className="container">
-            {filteredApartments.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filteredApartments.map((apartment, index) => (
-                  <div key={apartment.id} className="animate-fade-in" style={{ animationDelay: `${(index + 1) * 100}ms` }}>
-                    <ApartmentCard apartment={apartment} />
-                  </div>
-                ))}
+        <main className="flex-1 pt-20">
+          {/* Header Section */}
+          <section className="relative py-20 bg-gradient-to-r from-sea-light to-white dark:from-sea-dark dark:to-background overflow-hidden">
+            <div className="container relative z-10">
+              <div className="max-w-3xl mx-auto text-center animate-fade-in">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+                  {t.apartments.title}
+                </h1>
+                <p className="text-muted-foreground text-lg mb-6">
+                  {t.apartments.subtitle}
+                </p>
               </div>
-            ) : (
-              <div className="text-center py-12 animate-fade-in">
-                <h3 className="text-xl font-semibold mb-2">{t.apartments.filters.noMatch}</h3>
-                <p className="text-muted-foreground mb-6">{t.apartments.filters.adjustFilters}</p>
-                <Button 
-                  variant="outline" 
-                  onClick={() => {
-                    setCapacityFilter("all");
-                    setLocationFilter("all");
-                    setPriceRange([100, 350]);
-                  }}
-                >
-                  {t.apartments.filters.resetFilters}
-                </Button>
-              </div>
-            )}
-          </div>
-        </section>
-      </main>
-      
-      <Footer />
-    </div>
+            </div>
+            
+            {/* Decorative elements */}
+            <div className="absolute bottom-0 right-0 w-1/2 h-1/2 opacity-10">
+              <div className="absolute bottom-0 right-0 w-64 h-64 rounded-full bg-primary/50 blur-3xl" />
+              <div className="absolute top-10 right-40 w-48 h-48 rounded-full bg-sea-light blur-3xl" />
+            </div>
+          </section>
+          
+          {/* Apartments Grid */}
+          <section className="section">
+            <div className="container">
+              {filteredApartments.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {filteredApartments.map((apartment, index) => (
+                    <div key={apartment.id} className="animate-fade-in" style={{ animationDelay: `${(index + 1) * 100}ms` }}>
+                      <ApartmentCard apartment={apartment} />
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-12 animate-fade-in">
+                  <h3 className="text-xl font-semibold mb-2">{t.apartments.filters.noMatch}</h3>
+                  <p className="text-muted-foreground mb-6">{t.apartments.filters.adjustFilters}</p>
+                  <Button 
+                    variant="outline" 
+                    onClick={() => {
+                      setCapacityFilter("all");
+                      setLocationFilter("all");
+                      setPriceRange([100, 350]);
+                    }}
+                  >
+                    {t.apartments.filters.resetFilters}
+                  </Button>
+                </div>
+              )}
+            </div>
+          </section>
+        </main>
+        
+        <Footer />
+      </div>
+    </>
   );
 }
