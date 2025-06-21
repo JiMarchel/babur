@@ -144,6 +144,6 @@ export default function ApartmentDetail() {
         <Footer />
         <WhatsAppButton phoneNumber="6281227162297" />
       </div>
-    </>git p
+    </>
   );
 } 
